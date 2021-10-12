@@ -21,7 +21,6 @@ class Figure:
         elif self.name == 'Rectangle':
             return self.height * self.length
         elif self.name == 'Triangle':
-            '''S = p · (p - a) · (p - b) · (p - c)'''
             p = (self.a + self.b + self.c) / 2
             return sqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
         else:
