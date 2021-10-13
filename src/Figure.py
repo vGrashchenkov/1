@@ -40,6 +40,7 @@ class Figure:
             raise ValueError('Неизвестная фигура')
 
     def add_area(self, figure) -> float:
+
         try:
             area_sum = self.area + getattr(figure, 'area')
         except AttributeError:
