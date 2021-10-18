@@ -1,3 +1,4 @@
+from math import sqrt
 from src.Figure import Figure
 
 
@@ -18,3 +19,12 @@ class Triangle(Figure):
         self.c = c
         self.area = self.area_calculation()
         self.perimeter = self.perimeter_calculation()
+
+    def area_calculation(self) -> float:
+
+        p = (self.a + self.b + self.c) / 2
+        return sqrt(p * (p - self.a) * (p - self.b) * (p - self.c))
+
+    def perimeter_calculation(self) -> float:
+
+        return self.a + self.b + self.c
