@@ -1,9 +1,9 @@
 from csv import DictReader
 from json import load, dump
 
-BOOKS_FILE = '../data/books.csv'
-USERS_FILE = '../data/users.json'
-REFERENCE_FILE = '../reference.json'
+BOOKS_FILE = 'data/books.csv'
+USERS_FILE = 'data/users.json'
+REFERENCE_FILE = 'result.json'
 
 
 def books_read(file_path):
