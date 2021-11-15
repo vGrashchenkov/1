@@ -5,7 +5,7 @@ from typing import List, Optional
 from pydantic import BaseModel, HttpUrl
 
 
-class All_breeds(BaseModel):
+class AllBreeds(BaseModel):
     affenpinscher: List[Optional[str]]
     african: List[Optional[str]]
     airedale: List[Optional[str]]
@@ -103,21 +103,21 @@ class All_breeds(BaseModel):
     wolfhound: List[str]
 
 
-class Model_all_breeds(BaseModel):
-    message: All_breeds
+class ModelAllBreeds(BaseModel):
+    message: AllBreeds
     status: str
 
 
-class Model_breed_list(BaseModel):
+class ModelBreedList(BaseModel):
     message: List[str]
     status: str
 
 
-class Model_single_image(BaseModel):
+class ModelSingleImage(BaseModel):
     message: HttpUrl
     status: str
 
 
-class Model_multiple_image(BaseModel):
+class ModelMultipleImage(BaseModel):
     message: List[HttpUrl]
     status: str

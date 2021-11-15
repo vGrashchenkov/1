@@ -2,7 +2,7 @@ import random
 
 import pytest
 
-from pages.openbrewerydb.openbrewerydb import Breweries
+from pages.openbrewerydb import Breweries
 
 
 @pytest.fixture()

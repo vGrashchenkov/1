@@ -1,13 +1,13 @@
 import requests
 
 
-class Dog_ceo:
+class DogCeo:
 
     def __init__(self):
         self.URL = 'https://dog.ceo/'
 
 
-class All_dogs(Dog_ceo):
+class AllDogs(DogCeo):
 
     def get_all_dogs(self):
         path = 'api/breeds/list/all'
@@ -15,7 +15,7 @@ class All_dogs(Dog_ceo):
         return requests.request("GET", self.URL + path)
 
 
-class Random_image(Dog_ceo):
+class RandomImage(DogCeo):
 
     def get_single_random_image(self):
         path = 'api/breeds/image/random'
@@ -28,7 +28,7 @@ class Random_image(Dog_ceo):
         return requests.request("GET", self.URL + path)
 
 
-class By_breed(Dog_ceo):
+class ByBreed(DogCeo):
 
     def get_all_images_breed(self, breed):
         path = f'api/breed/{breed}/images'
@@ -46,7 +46,7 @@ class By_breed(Dog_ceo):
         return requests.request("GET", self.URL + path)
 
 
-class Sub_breed(Dog_ceo):
+class SubBreed(DogCeo):
 
     def get_all_sub_breeds(self, breed):
         path = f'api/breed/{breed}/list'
