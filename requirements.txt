@@ -1,1 +1,4 @@
 pytest~=6.2.5
+pydantic~=1.8.2
+datamodel-code-generator~=0.11.14
+requests~=2.26.0

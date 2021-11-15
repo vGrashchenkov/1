@@ -250,3 +250,4 @@ fabric.properties
 # debbag files
 debbag_test.py
 /debbag.py
+!/temp_json_to_model
