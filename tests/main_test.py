@@ -12,6 +12,9 @@ def test_main_page(browser):
     browser.find_element(**Main.DIV_CART) \
         .find_element(**Main.BUTTON_SEARCH) \
         .find_element(**Main.SPAN_CART)
+    browser.find_element(**Main.SLIDESHOW)
+    browser.find_element(**Main.CAROUSEL)
+
 
     assert len(browser.find_elements(**Main.MENU)) == 8
     assert len(browser.find_elements(**Main.FETURED)) == 4
