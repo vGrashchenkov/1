@@ -1,9 +1,12 @@
 from selenium.webdriver.common.by import By
 
 
-class Desktops:
-    PATH = '/desktops'
-    ITEMS = {'by': By.CSS_SELECTOR, 'value': '#content > div:nth-of-type(4) > div:nth-of-type(2)'}
+class Catalog:
+
+    def __init__(self, catalog_path):
+        self.PATH = catalog_path
+
+    ITEMS = {'by': By.CSS_SELECTOR, 'value': '#content > div:nth-of-type(4)'}
     LEFT_MEU = {'by': By.CSS_SELECTOR, 'value': '.list-group'}
     BREADCRUMB = {'by': By.CSS_SELECTOR, 'value': '.breadcrumb'}
     DESKTOPS_DESCR = {'by': By.CSS_SELECTOR, 'value': '#content > div:nth-of-type(1)'}
