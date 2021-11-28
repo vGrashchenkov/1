@@ -18,4 +18,3 @@ def test_product_card(browser, product):
     description.find_element(**ProductCard.PICTURES)
     description.find_element(**ProductCard.TABS)
 
-
