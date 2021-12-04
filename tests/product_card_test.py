@@ -3,7 +3,7 @@ import pytest
 from pages.product_card import ProductCard
 
 
-@pytest.mark.parametrize('product', ['/desktops/test', '/tablet/samsung-galaxy-tab-10-1'])
+@pytest.mark.parametrize('product', ['/index.php?route=product/product&path=20&product_id=42'])
 def test_product_card(browser, product):
     browser.implicitly_wait(3)
     browser.get(browser.url + ProductCard(product).PATH)
