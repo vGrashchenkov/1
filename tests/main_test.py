@@ -4,9 +4,9 @@ from pages.main import Main
 def test_main_page(browser):
     browser.implicitly_wait(3)
     browser.get(browser.url)
-    # browser.find_element(**Main.LOGO) # на demo.opencart.com нихуя не работает
-    # browser.find_element(**Main.SLIDESHOW)
-    # browser.find_element(**Main.CAROUSEL)
+    # browser.find_element(**Main.LOGO) # на demo.opencart.com нет логотипа
+    browser.find_element(**Main.SLIDESHOW)
+    browser.find_element(**Main.CAROUSEL)
 
     search = browser.find_element(**Main.DIV_SEARCH)
     search.find_element(**Main.INPUT_SEARCH)

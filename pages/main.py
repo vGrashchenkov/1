@@ -10,6 +10,6 @@ class Main:
     BUTTON_CART = {'by': By.CSS_SELECTOR, 'value': 'button[type="button"]'}
     SPAN_CART = {'by': By.ID, 'value': 'cart-total'}
     MENU = {'by': By.CSS_SELECTOR, 'value': 'ul.navbar-nav > li'}
-    SLIDESHOW = {'by': By.CSS_SELECTOR, 'value': '.slideshow'}
+    SLIDESHOW = {'by': By.CSS_SELECTOR, 'value': '#content > div:nth-of-type(3)'}
     FETURED = {'by': By.CLASS_NAME, 'value': 'product-thumb'}
-    CAROUSEL = {'by': By.CSS_SELECTOR, 'value': '.carousel'}
+    CAROUSEL = {'by': By.CSS_SELECTOR, 'value': '#content > div:nth-of-type(1)'}
